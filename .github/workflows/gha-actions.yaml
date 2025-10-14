@@ -7,8 +7,9 @@ permissions:
 on:
   workflow_dispatch:
   push:
-    branches:
-      - feature-1
+    tags:
+      - "v*"
+      
 jobs:
   run-go-action:
     runs-on: ubuntu-latest
