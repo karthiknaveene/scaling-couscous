@@ -1,4 +1,4 @@
-name: Test My Go Action
+name: Test My Go Action-1
 
 permissions:
   id-token: write
@@ -7,7 +7,7 @@ permissions:
 on:
   push:
     branches:
-     -feature-1
+     - feature-1
       
 jobs:
   run-go-action:
