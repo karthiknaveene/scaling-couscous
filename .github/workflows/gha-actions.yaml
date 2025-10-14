@@ -7,7 +7,7 @@ permissions:
 on:
   workflow_dispatch:
   push:
-    tags:
+    branches:
       - feature-1
       
 jobs:
