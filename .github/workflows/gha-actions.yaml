@@ -5,8 +5,9 @@ permissions:
   contents: read
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+     -feature-1
       
 jobs:
   run-go-action:
