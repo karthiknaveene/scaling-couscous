@@ -5,10 +5,9 @@ permissions:
   contents: read
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - feature-1
+    tags:
+      - "v*"
       
 jobs:
   run-go-action:
