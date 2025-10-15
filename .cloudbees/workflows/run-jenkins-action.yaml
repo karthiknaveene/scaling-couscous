@@ -1,0 +1,23 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: workflow
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  jenkins-run-job-without-output:
+    steps:
+      - id: jenkins
+        name: invoke-jenkins-job
+        uses: cloudbees-io/jenkins-run-job@v2
+        with:
+          url: ${{ vars.JENKINS_URL }}
+          username: ${{ secrets.JENKINS_USERNAME }}
+          token: ${{ secrets.JENKINS_PASSWORD }}
+          job-name: MB-H-final-test
+
+
+  
