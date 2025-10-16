@@ -17,7 +17,7 @@ jobs:
           url: ${{ vars.JENKINS_URL }}
           username: ${{ secrets.JENKINS_USERNAME }}
           token: ${{ secrets.JENKINS_PASSWORD }}
-          job-name: MB-H-final-test
+          job-name: MB-H-final-test/job/master
 
 
   
