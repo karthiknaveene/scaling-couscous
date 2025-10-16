@@ -12,7 +12,7 @@ jobs:
     steps:
       - id: jenkins
         name: invoke-jenkins-job
-        uses: cloudbees-io/jenkins-run-job-private@CBP-23585
+        uses: cloudbees-io/jenkins-run-job@CBP-23585
         with:
           url: ${{ vars.JENKINS_URL }}
           username: ${{ secrets.JENKINS_USERNAME }}
