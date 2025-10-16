@@ -12,12 +12,12 @@ jobs:
     steps:
       - id: jenkins
         name: invoke-jenkins-job
-        uses: cloudbees-io/jenkins-run-job@v2
+        uses: cloudbees-io/jenkins-run-job-private@CBP-23585
         with:
           url: ${{ vars.JENKINS_URL }}
           username: ${{ secrets.JENKINS_USERNAME }}
           token: ${{ secrets.JENKINS_PASSWORD }}
-          job-name: MB-H-final-test/master
+          job-name: MB-H-final-test
 
 
   
